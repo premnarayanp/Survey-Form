@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form class="survey-form">
+            <div class="form-header">
+                <h1>Survey Form</h1>
+                <p>Fell free to answer the questions below based on own experience and opinion. If you are not convenient in answering a particular question please skip by answering "No" every answer would be very appreciated. Thank you for your time.</p>
+            </div>
+
+            <div class="form-main-content">
+                <div class="left-content">
+                    <div class="field">
+                        <label for="name">Your Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Your Email Address</label>
+                        <input type="email" placeholder="user@useer.com" id="email" />
+                    </div>
+
+                    <div class="field">
+                        <label for="mobile-number">Your Phone Number</label>
+                        <input type="number" placeholder="9999999999" id="mobile-number" />
+                    </div>
+
+                    <div class="field">
+                        <label for="place">Where Do You Live?</label>
+                        <select placeholder="9999999999" id="place">
+                            <option>Select</option>
+                        </select>
+                    </div>
+
+                    <div class="age-range-picker">
+                        <fieldset>
+                            <legend>Age</legend>
+
+                            <div class="age-range-container">
+                                <div class="age-field">
+                                    <input type="radio" name="ageRange" value="15-20">
+                                    <span>15-20</span>
+                                </div>
+
+                                <div class="age-field">
+                                    <input type="radio" name="ageRange" value="20-30">
+                                    <span>20-30</span>
+                                </div>
+
+                                <div class="age-field">
+                                    <input type="radio" name="ageRange" value="31-40">
+                                    <span>31-40</span>
+                                </div>
+
+                                <div class="age-field">
+                                    <input type="radio" name="ageRange" value="41-50">
+                                    <span>41-50</span>
+                                </div>
+
+                                <div class="age-field">
+                                    <input type="radio" name="ageRange" value="Prefer not to say">
+                                    <span>Prefer not to say</span>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="field">
+                        <label for="place">How would you rate your proficiency in coding?</label>
+                        <div class="proficiency">
+                            <input type="radio" name="proficiency" value="Beginner">
+                            <span>Beginner</span>
+                        </div>
+                        <div class="proficiency">
+                            <input type="radio" name="proficiency" value="Intermediate">
+                            <span>Intermediate</span>
+                        </div>
+                        <div class="proficiency">
+                            <input type="radio" name="proficiency" value="Advance">
+                            <span>Advance</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right-content">
+                    <div class="field">
+                        <label for="">Have You Appeared in any coding context?</label>
+                        <div class="coding-context">
+                            <input type="radio" name="codingContext" value="Yes">
+                            <span>Yes</span>
+                        </div>
+                        <div class="coding-context">
+                            <input type="radio" name="codingContext" value="No" checked>
+                            <span>No</span>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="textArea1">Discuss what drives your passion for coding and outline your aspirations in the field.</label>
+                        <textarea id="textArea1" rows="4"> </textarea>
+                    </div>
+
+                    <div class="field">
+                        <label for="textArea2">What are the some challenges you face while coding?</label>
+                        <textarea id="textArea2" rows="4"></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="textArea3">Please list the Data Structure you have a strong understanding of.</label>
+                        <textarea id="textArea3" rows="4"> </textarea>
+                    </div>
+
+                    <div class="form-action">
+                        <button id="submit-btn">Submit Form</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

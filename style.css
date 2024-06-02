@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #a5d6a7 0%, #4caf50 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 0 6% 0 6%; */
+    box-sizing: border-box;
+}
+
+.survey-form {
+    background-color: white;
+    border-radius: 8px;
+    margin: 20px 6% 20px 6%;
+    padding: 0 20px 10px 20px;
+}
+
+
+/* ------Form Header---------- */
+
+
+/* .form-header {
+    padding: 15px;
+} */
+
+.form-header h1 {
+    color: green;
+}
+
+.form-header p {
+    text-transform: capitalize;
+}
+
+
+/* ------ form-main-content ----------- */
+
+.form-main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    width: 45%;
+    min-width: 350px;
+    /* border: solid 1px gray; */
+}
+
+.right-content {
+    width: 40%;
+    min-width: 350px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 10px;
+}
+
+.field input {
+    line-height: 30px;
+}
+
+.field select {
+    height: 35px;
+}
+
+#submit-btn {
+    width: 100%;
+    background-color: #4caf50;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    color: white;
+    padding: 5px 0 5px 0;
+    margin-top: 10px;
+}
+
+
+/*--------- age range picker----------  */
+
+.age-range-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.age-field {
+    box-sizing: border-box;
+}
